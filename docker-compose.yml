@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  robot-gripper-detection:
+    build: .
+    container_name: robot-gripper-detection
+    volumes:
+      - ./Robot_gripper:/app/Robot_gripper
+      - ./results:/app/results
+      - ./runs:/app/runs
+      - ./videos:/app/videos
+      - ./src:/app/src
+      - ./yolov8n-seg.pt:/app/yolov8n-seg.pt
+    environment:
+      - PYTHONPATH=/app/src
+    ports:
+      - "8080:8080"
+    command: python -m src.main test

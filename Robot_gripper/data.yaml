@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 4
+names: ['UR5', 'gripper_left', 'gripper_right', 'target']
+
+roboflow:
+  workspace: santi-mr6nt
+  project: robot_gripper
+  version: 9
+  license: MIT
+  url: https://universe.roboflow.com/santi-mr6nt/robot_gripper/dataset/9
