@@ -2,6 +2,8 @@
 
 This project implements a robot gripper detection and monitoring system using YOLOv8 segmentation. The system can detect and track robot arms, grippers, and targets in real-time video, providing motion analysis and status alerts for robotic operations.
 
+![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=UR5-Robot-Arm-Monitoring&show_icons=true&theme=radical)
+
 ## Table of Contents
 - [Overview](#overview)
 - [Project Structure](#project-structure)
